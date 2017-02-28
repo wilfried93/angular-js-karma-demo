@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <title>Calculatrice moderne angularJs</title>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/cal.factory.js"></script>
+        <script type="text/javascript" src="js/cal.service.js"></script>
+        <script type="text/javascript" src="js/cal.controller.js"></script>
+    </head>
+    <body ng-app="calc" ng-controller="CalcController">
+
+        <h1>Calculatrice</h1>
+        <div><b>Resulat :</b> {{ resultat }}</div>
+
+        <div>
+            <div>
+                <label for="nbr1">Nbr 1</label>
+                <input id="nbr1" type="number" ng-model="nombre1">
+            </div>
+
+            <div>
+                <label for="nbr2">Nbr 2</label>
+                <input id="nbr2" type="number" ng-model="nombre2">
+            </div>
+
+            <div>
+                <button ng-click="calculer();">Additioner</button>
+            </div>
+
+        </div>
+    </body>
+</html>
